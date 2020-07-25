@@ -1,0 +1,593 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Merriweather', serif;
+}
+html{
+    font-size:62.5%;
+    scroll-behavior: smooth;
+}
+ul li{
+    list-style: none;
+    display:inline-block;
+}
+.description{
+    color:#fff;
+    font-size: 1.2rem;
+    margin-top:1.6rem;
+    width:80%;
+    line-height: 2;
+}
+/* ====================Reusable Components===================== */
+.row{
+    max-width:108rem;
+    margin: auto;
+}
+section{
+    padding-bottom: 5.5rem;
+}
+.vl{
+    content:"";
+    width:.1rem;
+    height: 8rem;
+    background:#feb960;
+    margin:0 auto;
+}
+h2{
+    text-align: center;
+    color:#fff;
+    margin-top: 2rem;
+    font-size: 3.5rem;
+    width:70%;
+    margin-left: 15%;
+}
+h5{
+    font-size: 1.4rem;
+    color:#feb960;
+    margin-top: 1rem;
+    text-transform: uppercase;
+}
+h3{
+    color:#fff;
+    font-size: 3rem;
+    margin-top: 1rem;
+
+}
+.right-arrow{
+    color:#f7ac53;
+font-size: 1.5rem;
+margin-left: .4rem;
+}
+.role{
+    color:#fff;
+    margin-top: 1.2rem;
+    margin-bottom: 2.5rem;
+    display: inline-block;
+    font-size: 1.3rem;
+ 
+}
+
+/* ======================Header Section====================== */
+header{
+    background: radial-gradient(rgba(32, 32, 32, 0.8), rgba(32, 32, 32, 0.8)), url(./img/Hero-bg.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+   height: fit-content;
+   padding-bottom: 3rem;
+}
+.head{
+    text-align: center;
+}
+h1{
+    color:#fff;
+    font-size: 4rem;
+    font-weight: 400;
+    border:1px solid rgba(255, 255, 255, 0.2);
+    padding:5rem 10rem;
+    display: inline-block;
+    margin-top:14rem;
+}
+h1 span{
+    color:#f7ac53;
+}
+.head ul {
+    margin-top:2rem;
+    animation: appear 1s ease-out;
+    animation-duration: 1s;
+    transition:all 1s ease-out;
+}
+@keyframes appear{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.head ul li a{
+    color:#fff;
+    text-decoration: none;
+}
+.head ul li {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+.head ul li:nth-child(2),
+.head ul li:nth-child(3){
+    margin-left: 1rem;
+   border-left: 1px solid #f7ac53;
+   padding-left: 1rem;
+}
+.icon a{
+    color:#f7ac53;
+     
+}
+.icon{
+    font-size: 3rem;
+    margin-top:8rem;
+    animation:arrow 2s ease-in;
+    animation-iteration-count: infinite;
+   transition:all 2s ease-out;
+   height: 3rem;
+}
+@keyframes arrow {
+ 0% {
+         opacity:1;
+     }
+     50%{
+         opacity: .4;
+         padding-top: .4rem;
+     }
+     100%{
+         opacity: 1;
+     }
+ }
+.logo{
+    float: left;
+    font-size: 3rem;
+    width:4.4rem;
+    height:4.4rem;
+    border:2px solid #f7ac53;
+    border-radius: 50%;
+    text-align: center;
+    color:#f7ac53;
+    /* padding:1rem; */
+    margin-left: 2rem;
+}
+.header-bottom{
+    margin-top:5rem;
+}
+.btn{
+    font-size: 1.5rem;
+    float: right;
+    margin-right: 1rem;
+    color:#fff;
+    text-transform: uppercase;
+    margin-top:2rem;
+}
+.btn i{
+    color:#f7ac53;
+    font-size:1.2rem ;
+   animation:arrow 2s ease-in;
+    animation-iteration-count: infinite;
+   transition:all 2s ease-out;
+}
+@keyframes arrow {
+ 0% {
+         opacity:1;
+     }
+     50%{
+         opacity: .4;
+     }
+     100%{
+         opacity: 1;
+     }
+ }
+/* =====================End Header Section================== */
+
+/* =====================Services Section====================== */
+.services-section{
+    background: #202020;
+    text-align: center;
+    transition:all 3s ease;
+}
+.services-logo{
+    font-size: 2rem;
+    color:#f7ac53;
+}
+.box{
+    margin-top:5rem;
+    text-align: left;
+}
+.box-con{
+    width:80%;
+    margin-left: 13%;
+}
+
+.box a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-top:2rem;
+    display: inline-block;
+}
+/* ===================End Services Section===================== */
+
+/* =====================Strategy Page========================== */
+.strategy-page{
+    background: #202020;
+    padding-bottom: 0;
+}
+.strategy-page .strategy-img{
+    width:84%;
+    margin-left: 16%;
+    height:96vh;
+    filter:grayscale(1);
+}
+.strategy-page .strategy-img-con{
+position: relative;
+}
+.strategy-page .strategy-btn{
+    background:#fff;
+    font-size: 2.3rem;
+    padding:1.1rem 2.5rem;
+    position: absolute;
+    top:12rem;
+    left:100%;
+    transform: translateX(-100%);
+   color:#000;
+}
+.strategy-page .back-btn{
+    position: absolute;
+    bottom:3rem;
+    left:11rem;
+    color:#000;
+    border: 3px solid #000;
+    width:4rem;
+    height: 4rem;
+    border-radius: 50%;
+    font-size:2.5rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    animation: pulsate 1s ease;
+    animation-iteration-count: infinite;
+    transition: .8s;
+}
+@keyframes pulsate{
+    0%{
+        opacity:1
+    }
+    50%{
+        opacity: .5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.strategy-page .strategy-right{
+ text-align: left;
+ padding-left: 2rem;
+}
+.strategy-page .strategy-right .vl{
+    display:flex;
+     margin: 0;
+}
+.strategy-page .strategy-right h4{
+     font-size: 1.7rem;
+     color:#fff;
+     margin-top: 2rem;
+}
+ .strategy-featurs{
+    margin-top:3rem;
+}
+.strategy-featurs i{
+color:#f7ac53;
+font-size: 1.5rem;
+padding-right: .5rem;
+}
+.strategy-featurs h6{
+    display: inline;
+    font-size:1.5rem;
+    color:#fff;
+}
+.strategy-featurs .col:nth-child(3),
+ .strategy-featurs .col:nth-child(4){
+    margin-left: 0;
+    margin-top:2rem;
+}
+.strategy-page .strategy-right a{
+    text-decoration: none;
+    color:#000;
+}
+.get-btn{
+    margin-top: 5rem;
+    background: #feb960;
+    font-size: 1.7;
+    text-transform: uppercase;
+    
+    padding:1.2rem 3rem;
+   display: inline-block;
+   border-radius: .1rem;
+}
+.strategy-page .strategy-right .get-btn .fa-long-arrow-alt-right{
+    font-size: 1.3rem;
+  color:black;
+}
+/* ===================End Strategy Page======================== /
+
+/* =====================Project Section====================== */
+.project-section{ 
+    background:linear-gradient(#181818,#181818) ;
+    text-align: center;
+    /* height: 100vh; */
+}
+
+.project-section .project-right a{
+    color:#fff;
+    font-size: 1.4rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    display: inline-block;
+}
+.project-section img{
+    width:55%;
+}
+/* ====================End Project Section===================== */
+
+/* =================Testimonial Section======================== */
+.testimonial-section{
+    background: #202020;
+    text-align: center;
+}
+.company-logo {
+    margin-top:4rem;
+}
+.company-logo i{
+    font-size: 4rem;
+    color:#fff;
+    margin-left: 6rem;
+}
+.company-logo i:first-child{
+    margin-left: 0;
+}
+.testimonial{
+    background:#181818;
+    width:60%;
+    margin:auto;
+    margin-top: 4rem;
+     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.274);
+    /* height: ; */
+}
+.testimonial-img img{
+    width:10%;
+}
+.testimonial p{
+    color:#fff;
+    margin-left: 10%;
+}
+.testimonial-people {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:6rem;
+}
+.testimonial-people .hl{
+width:14rem;
+height: .1rem;
+background: #fff;
+margin-top:.1rem;
+}
+.testimonial-people h5{
+padding:0 3rem;
+display:inline-block;
+}
+
+/* ================End Testimonial Section==================== */
+
+/* =====================Team Section========================= */
+.team-section{
+    background:#181818;
+    text-align: center;
+}
+.team-section .team-member-photo img{
+ width:90px;
+ height: 90px;
+ border-radius: 50%;
+}
+.team-section .col{
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    margin-bottom:0;
+    margin-left: 0;
+    margin-top:7rem;
+    padding-top:2rem;
+    height:32rem;
+    background-color:#202020;
+}
+.team-section .span_1_of_4{
+    width:25%;
+}
+.team-section .col:nth-child(5){
+    margin-left: 0;
+}
+.team-section .col:nth-child(4),
+.team-section .col:nth-child(8)
+{
+    border-right: none;
+}
+.team-section .col:nth-child(5),
+.team-section .col:nth-child(6),
+.team-section .col:nth-child(7),
+.team-section .col:nth-child(8){
+    border-bottom: none;
+    margin-top: 0;
+}
+.hover{
+display: none;
+}
+ .team-member{
+    position: relative;
+    
+}
+    
+.team-member:hover .hover{
+    background:#202020;
+    display: flex;
+    position: absolute;
+    top:0;
+    left:0;
+    animation:overlay .6s ease;
+    transition: all .6s ease;
+    height: 32rem;
+    overflow: hidden;
+}
+@keyframes overlay{
+    0%{
+        top:0;
+    left:100%;
+    }
+    100%{
+        top:0;
+        left:0;
+    }
+}
+.hover-left img{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 1rem;
+    margin-top: 1rem;
+  
+}
+.hover-left .hover-photo{
+    width:55px;
+    height: 55px;
+      border-left: 1px solid #f7ac53;
+    border-top: 1px solid #f7ac53;
+}
+.hover-left h5,
+.hover-left h6{
+    writing-mode: vertical-lr;
+    margin-top: 1rem;
+    display: inline-block;
+    text-align: left;
+}
+.hover-right p {
+font-size: 1.3rem;
+color:#fff;
+width:85%;
+text-align: left;
+margin-left: 2rem;
+margin-top: 1rem;
+line-height: 1.6;
+}
+/* =====================End Team Section====================== */
+
+/* ===================Contact Section========================== */
+.contact-section{
+    text-align: center;
+    background: #343434;
+}
+.form-bg{
+    background:#181818;
+    width:52rem;
+    height: fit-content;
+    margin:auto;
+    margin-top:4rem;
+    padding-bottom: 3rem;
+    padding-top: 2.5rem;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.274);
+  
+}
+form .col:nth-child(3),
+form .col:nth-child(5){
+    margin-left: 0;
+}
+form .col:nth-child(3),
+form .col:nth-child(4){
+    margin-top: 3rem;
+}
+
+form label{
+    display: block;
+      text-align:left;
+      margin-left: 4.2rem;
+      margin-bottom: .6rem;
+      color:#fff;
+}
+form .col:nth-child(5){
+ margin-top: 5rem;
+}
+form input{
+   background: #181818;
+   border:none;
+   border-bottom:1px solid rgba(255, 255, 255, 0.5);
+}
+form .span_2_of_2 input{
+    width:43.6rem;
+}
+form input:focus{
+    color:#feb960;
+    border:none;
+    outline: none;
+    border-bottom: 1px solid #feb960;
+}
+.form-bg a{
+    color:#000;
+}
+.form-bg i{
+    color:#000;
+}
+.footer{
+    margin-top: 5rem;
+    width:56%;
+    margin-left: 25%;
+    text-align: left;
+}
+.footer-left{
+    width:10%;
+  
+}
+.footer-left .logo{
+      margin-top: 2.5rem;
+      margin-left: 0;
+}
+.footer-right{
+    width:90%;
+    display: flex;
+}
+.footer-right .f1{
+    width:25%;
+    margin: 1.5rem;
+}
+.footer-right h5{
+    color:#fff;
+    font-size: 1.2rem;
+
+}
+.footer-right p{
+    color:rgba(255, 255, 255, 0.678);
+    margin-top: 2rem;
+    font-size: 1rem;
+    line-height: 2.2;
+}
+.social-icon i{
+    color:#fff;
+    font-size: 1.2rem;
+    margin:1rem .5rem;
+}
+
+/* ==================End Contact Section======================= */
+
+
+
+
+

@@ -1,0 +1,178 @@
+@media screen and (max-width:1024px){
+    html{
+        font-size: 57.5%;
+    }
+
+}
+@media screen and (max-width:860px){
+    h2{
+        font-size: 3rem;
+    }
+    h3{
+        font-size: 2.5rem;
+    }
+}
+@media screen and (max-width:768px){
+    h1{
+        padding:3rem 6rem;
+        font-size: 3.2rem;
+    }
+    .team-section .span_1_of_4{
+        width:49.2%;
+    }
+    .team-section .col:nth-child(3),
+.team-section .col:nth-child(4){
+margin-top: 0;
+}
+    .team-section .col:nth-child(2),
+.team-section .col:nth-child(6){
+border-right: none;
+}
+.team-section .col:nth-child(5),
+.team-section .col:nth-child(6){
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.footer-left{
+    width: 100%;
+}
+.footer-right{
+    width:100%;
+}
+.footer-left .logo{
+      text-align: center;
+      margin-left: 130px;
+       margin-top: 2.5rem;
+       margin-bottom: 2rem;
+      
+}
+.social-icon i{
+    font-size: 1rem;
+    margin:1rem .4rem;
+}
+}
+@media screen and (max-width:580px){
+    .company-logo i{
+    font-size: 3rem;
+    color:#fff;
+    margin-left: 4rem;
+}
+.footer-left .logo{
+    margin-left: 160px;
+}
+.footer{
+    width:80%;
+    margin-left: 15%;
+}
+.footer-right .f1{
+    width:35%;
+    margin: 1rem;
+}
+}
+@media screen and (max-width:480px){
+    html{
+        font-size:52.5%;
+    }
+    h1{
+        padding:2rem 4rem;
+    }
+    .box{
+    text-align: center;
+    border:1px solid rgba(255, 255, 255, 0.137);
+}
+.box p{
+    width:70%;
+margin-left: 15%;
+}
+.testimonial-img img{
+    width:30%;
+}
+.team-section .col{
+    border-right: none;
+       border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.team-section .col:nth-child(5),
+.team-section .col:nth-child(6){
+    border-right:none;
+}
+.team-section .span_1_of_4{
+        width:100%;
+    }
+  .team-section .col:nth-child(2){
+      margin-top: 0;
+  }
+  .team-section .col:nth-child(7){
+       border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .form-bg{
+       width:45rem;
+}
+form .span_2_of_2 input{
+    width:20rem;
+}
+form label{
+    display: inline;
+      text-align:left;
+      margin-left: 4.2rem;
+      color:#fff;
+}
+form .col{
+ margin-top: 1rem;
+}
+form .col:nth-child(3),
+form .col:nth-child(4){
+ margin-top: 1rem;
+}
+}
+
+@media screen and (max-width:380px){
+    html{
+        font-size: 47.5%;
+    }
+    h1{
+        padding:2rem 2rem;
+    }
+    .icon{
+        font-size: 2rem;
+    }
+    h2,h3{
+font-size: 2rem;
+    }
+     .company-logo i{
+    font-size: 2.5rem;
+    margin-left: 3rem;
+}
+.testimonial-img img{
+    width:30%;
+}
+.footer-left .logo{
+    margin-left: 100px;
+}
+  .form-bg{
+       width:38rem;
+}
+form .col{
+ margin-top: 1rem;
+}
+form .col:nth-child(3),
+form .col:nth-child(4){
+ margin-top: 1rem;
+}
+form .col{
+ margin-top: 1.5rem;
+}
+form .col:nth-child(3),
+form .col:nth-child(4){
+ margin-top: 1.5rem;
+}
+}
+@media screen and (max-width:300px){
+    html{
+        font-size: 42.5%;
+    }
+    h1{
+        padding:1rem 1rem;
+    }
+    .footer-left .logo{
+    margin-left: 80px;
+}
+}
